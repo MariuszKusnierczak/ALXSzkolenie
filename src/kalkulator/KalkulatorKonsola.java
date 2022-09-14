@@ -32,9 +32,8 @@ public class KalkulatorKonsola {
             int wynik = oblicz(x, y, op);
             System.out.println("Wynik: " + wynik);
         }
-        System.out.println("bajo jajo");
+        System.out.println("Koniec");
     }
-
 }
 
 
