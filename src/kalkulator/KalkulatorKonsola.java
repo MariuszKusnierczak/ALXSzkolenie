@@ -16,16 +16,20 @@ public class KalkulatorKonsola {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Podawaj działania postaci 12 + 13, a żeby zakończyć napis koniec");
         while(true) {
-        
-        System.out.println("Podaj działanie postaci 12 + 13:");
-        int x = sc.nextInt();
-        String op = sc.next();
-        int y = sc.nextInt();
-        
-        int wynik = oblicz(x, y, op);
-        System.out.println("Wynik: " + wynik);
-    }
+            if(! sc.hasNextInt()) {
+                break; // FIXME - powinienem spr czy to jest "koniec"
+            }
+            int x = sc.nextInt();
+            String op = sc.next();
+            int y = sc.nextInt();
+            
+            int wynik = oblicz(x, y, op);
+            System.out.println("Wynik: " + wynik);
+        }
+
     }
 
 }
