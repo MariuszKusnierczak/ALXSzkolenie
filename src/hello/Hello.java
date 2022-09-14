@@ -7,9 +7,6 @@ public class Hello {
 		System.out.println("linia 2");
 		System.out.println("Witam");
 		System.out.println("Witam");
-		System.out.println("Witam");
-		System.out.println("Witam");
-		System.out.println("Witam");
-		System.out.println("Witam");
+
 	}
 }
